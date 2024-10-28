@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shareable Resume Builder By M. Huzaifa</h1>
+        <form id="resumeForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter your name" id="name" required>
+            </div>
+            <div>
+                <label for="fatherName">Father's Name:</label>
+                <input type="text" placeholder="Enter your father's name" id="fatherName" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter your valid email" id="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" placeholder="Enter your current number" id="phone">
+            </div>
+            <div id="educationContainer">
+                <label>Education:</label>
+                <input type="text" class="education" placeholder="Add education" required>
+                <button type="button" id="addEducation">Add More</button>
+            </div>
+            <div id="skillsContainer">
+                <label>Skills:</label>
+                <input type="text" class="skill" placeholder="Add skill" required>
+                <button type="button" id="addSkill">Add More</button>
+            </div>
+            <div id="experienceContainer">
+                <label>Experience:</label>
+                <textarea class="experience" rows="2" placeholder="Add experience"></textarea>
+                <button type="button" id="addExperience">Add More</button>
+            </div>
+            <button type="submit">Generate Resume</button>
+        </form>
+        <div id="resumeOutput" class="resume-output"></div>
+        <button id="downloadPdf" style="display:none;">Download as PDF</button>
+        <button id="shareLink" style="display:none;">Share Link</button>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
